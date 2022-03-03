@@ -1,0 +1,78 @@
+{
+  "compilerOptions": {
+    "target": "esnext",
+    "module": "esnext",
+    "strict": true,
+    "jsx": "preserve",
+    "importHelpers": true,
+    "moduleResolution": "node",
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "sourceMap": true,
+    "baseUrl": ".",
+    "types": [
+      "webpack-env",
+      "mocha",
+      "chai",
+      "node"
+    ],
+    "paths": {
+      "@/*": [
+        "src/*"
+      ],
+      "~/*": [
+        "types/*"
+      ],
+      "@api/*": [
+        "src/api/*"
+      ],
+      "@http/*": [
+        "src/http/*"
+      ],
+      "@img/*": [
+        "src/assets/img/*"
+      ],
+      "@styl/*": [
+        "src/assets/styl/*"
+      ],
+      "@js/*": [
+        "src/assets/js/*"
+      ],
+      "@ts/*": [
+        "src/assets/ts/*"
+      ],
+      "@fonts/*": [
+        "src/assets/fonts/*"
+      ],
+      "@libs/*": [
+        "src/libs/*"
+      ],
+      "@cp/*": [
+        "src/components/*"
+      ],
+      "@views/*": [
+        "src/views/*"
+      ],
+      "@plugins/*": [
+        "src/plugins/*"
+      ]
+    },
+    "lib": [
+      "esnext",
+      "dom",
+      "dom.iterable",
+      "scripthost"
+    ]
+  },
+  "include": [
+    "src/**/*.ts",
+    "src/**/*.tsx",
+    "src/**/*.vue",
+    "tests/**/*.ts",
+    "tests/**/*.tsx"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}
