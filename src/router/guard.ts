@@ -20,9 +20,7 @@ export const beforeEach: NavigationGuardWithThis<undefined> = (to) => {
         return
       }
 
-      const menuActiveItem = menuFlatten.find((item: MenuItem) => {
-        return to.path === item.path
-      })
+      const menuActiveItem = menuFlatten.find((item: MenuItem) => to.path === item.path)
       // 因为menu和menuFlatten单独存储
       if (menuActiveItem && menu.length) {
         store.dispatch('updateActiveMenu', menuActiveItem)
